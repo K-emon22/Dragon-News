@@ -1,18 +1,18 @@
-import React from "react";
-import {useLoaderData} from "react-router";
+import {Link, useLoaderData} from "react-router";
 import {MdOutlineFavoriteBorder} from "react-icons/md";
 import {IoIosShareAlt} from "react-icons/io";
-import { MdOutlineRemoveRedEye } from "react-icons/md";
+import {MdOutlineRemoveRedEye} from "react-icons/md";
 const HomeDisplay = () => {
   const news = useLoaderData();
   console.log(news);
 
   return (
     <div className="p-2">
-      <h1 className="font-bold text-center text-2xl"> Dragon News Home</h1>
+      
 
       <div className=" h-[1100px] overflow-y-scroll">
         <div>
+        <h1 className="font-bold text-center text-2xl"> Dragon News All News </h1>
           {news.map((singlenews) => (
             <div key={singlenews.id}>
               <div className="flex flex-row bg-gray-300 p-2 my-5 ">
@@ -45,10 +45,11 @@ const HomeDisplay = () => {
                 </div>
                 <div>
                   <p className="line-clamp-4"> {singlenews.details}</p>
-                  <button className="text-orange-600 font-bold">
-                    {" "}
-                    Read More
-                  </button>
+                  <Link to={`/newsdetails/${singlenews.id}`}>
+                    <button className="text-orange-600 font-bold">
+                      Read More
+                    </button>
+                  </Link>
                 </div>
                 <div>
                   <hr />
@@ -62,7 +63,10 @@ const HomeDisplay = () => {
                       </span>{" "}
                     </h1>
                     <h1 className=" flex flex-row gap-2">
-                    <span className="my-auto"><MdOutlineRemoveRedEye /> </span>    <span>{singlenews.total_view}</span>
+                      <span className="my-auto">
+                        <MdOutlineRemoveRedEye />{" "}
+                      </span>{" "}
+                      <span>{singlenews.total_view}</span>
                     </h1>
                   </div>
                   <div></div>

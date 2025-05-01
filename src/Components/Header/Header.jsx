@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 const Header = () => {
   return (
-    <div className="text-center space-y-3">
+    <div className="text-center space-y-3 ">
       <img
         className=" flex mx-auto"
         src="https://i.ibb.co.com/7NB0GHzh/logo.png"

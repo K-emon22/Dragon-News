@@ -5,11 +5,11 @@ import {FaInstagram} from "react-icons/fa";
 const FindUs = () => {
   return (
     <div>
-      <div className="border p-2 flex flex-col gap-2 ">
+      <div className=" p-2 flex flex-col gap-2 ">
         <h1 className="font-bold text-2xl mb-3">Find Us On </h1>
 
         <div>
-          <button className="  border w-3/5 p-2 rounded-lg flex flex-row  ">
+          <button className="  border w-full p-2 rounded-lg flex flex-row  ">
             <span className="my-auto mr-2 p-2 bg-gray-300 rounded-full">
               <FaFacebookF />
             </span>
@@ -17,7 +17,7 @@ const FindUs = () => {
           </button>
         </div>
         <div>
-          <button className="  border w-3/5 p-2 rounded-lg flex flex-row  ">
+          <button className="  border w-full p-2 rounded-lg flex flex-row  ">
             <span className="my-auto mr-2 p-2 bg-gray-300 rounded-full">
               <FaXTwitter />
             </span>
@@ -26,7 +26,7 @@ const FindUs = () => {
         </div>
 
         <div>
-          <button className=" border w-3/5  p-2 rounded-lg flex flex-row  ">
+          <button className=" border w-full  p-2 rounded-lg flex flex-row  ">
             <span className="my-auto mr-2 p-2 bg-gray-300 rounded-full">
               <FaInstagram />
             </span>

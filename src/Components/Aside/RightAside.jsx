@@ -12,7 +12,7 @@ const RightAside = () => {
         <FindUs></FindUs>
       </div>
 
-      <div className="border p-2 flex flex-col gap-2 ">
+      <div className=" p-2 flex flex-col gap-2 ">
         <h1 className="font-bold text-2xl mb-3">Q-Zone</h1>
 
         <div>
