@@ -1,4 +1,3 @@
-import React from "react";
 import {NavLink, useLoaderData} from "react-router";
 
 const CatagoriesOfNews = () => {
