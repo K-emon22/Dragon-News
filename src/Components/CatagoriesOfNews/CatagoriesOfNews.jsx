@@ -2,7 +2,7 @@ import {NavLink, useLoaderData} from "react-router";
 
 const CatagoriesOfNews = () => {
   const categories = useLoaderData();
-  console.log(categories);
+
 
   return (
     <div className="mt-5 ">

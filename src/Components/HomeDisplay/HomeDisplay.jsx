@@ -4,7 +4,7 @@ import {IoIosShareAlt} from "react-icons/io";
 import {MdOutlineRemoveRedEye} from "react-icons/md";
 const HomeDisplay = () => {
   const news = useLoaderData();
-  console.log(news);
+
 
   return (
     <div className="p-2">
